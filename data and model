@@ -1,0 +1,35 @@
+The dataset is taken from Kaggle
+
+https://www.kaggle.com/datasets/moltean/fruits
+
+Model description
+
+
+1. **Data Preparation:**
+   - Mounted Google Drive and downloaded the Fruit 360 dataset from Kaggle.
+   - Converted images to arrays for both training and testing datasets.
+   - Converted these arrays into grayscale and flattened them.
+   - Converted the flattened arrays into CSV format for both training and testing datasets.
+
+2. **Data Visualization:**
+   - Visualized some samples from the training dataset using matplotlib.
+
+3. **Data Balancing Check:**
+   - Checked whether the dataset is balanced or imbalanced by plotting the distribution of labels.
+
+4. **Preprocessing:**
+   - Scaled the features using MinMaxScaler.
+   - Applied Principal Component Analysis (PCA) to visualize high-dimensional data in 2D.
+
+5. **K-Nearest Neighbors (KNN):**
+   - Trained a KNN classifier on the training data.
+   - Used cross-validation to find the optimal value of k.
+   - Tested the final accuracy of the KNN model on the test data.
+
+6. **Support Vector Machine (SVM):**
+   - For the full dataset:
+     - Defined a parameter grid for GridSearchCV to find the best hyperparameters.
+     - Performed grid search to find the best SVM model.
+   - For a smaller dataset:
+     - Randomly sampled 1000 entries from the dataset.
+     - Applied SVM using GridSearchCV on this smaller dataset.
